@@ -7,13 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		195C72AD1D8FD12800C24BF4 /* UIDataManagerKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 195C72AB1D8FD12800C24BF4 /* UIDataManagerKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		195C72B51D8FD16F00C24BF4 /* StackViewDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195C72B41D8FD16F00C24BF4 /* StackViewDataManager.swift */; };
+		195C72B71D8FD1DB00C24BF4 /* Configurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195C72B61D8FD1DB00C24BF4 /* Configurable.swift */; };
+		195C72B91D8FD4B800C24BF4 /* ViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195C72B81D8FD4B800C24BF4 /* ViewContainer.swift */; };
+		195C72BC1D8FD77900C24BF4 /* UILabel+Configurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195C72BB1D8FD77900C24BF4 /* UILabel+Configurable.swift */; };
+		195C72BE1D8FD96800C24BF4 /* UIButton+Configurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195C72BD1D8FD96800C24BF4 /* UIButton+Configurable.swift */; };
+		19C817331D900F8A0096B455 /* ViewContainerAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C817321D900F8A0096B455 /* ViewContainerAction.swift */; };
+		19C817351D9016410096B455 /* ViewAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C817341D9016410096B455 /* ViewAction.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		195C72A81D8FD12800C24BF4 /* UIDataManagerKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIDataManagerKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		195C72AB1D8FD12800C24BF4 /* UIDataManagerKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIDataManagerKit.h; sourceTree = "<group>"; };
-		195C72AC1D8FD12800C24BF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		195C72AC1D8FD12800C24BF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = UIDataManagerKit/Info.plist; sourceTree = "<group>"; };
+		195C72B41D8FD16F00C24BF4 /* StackViewDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackViewDataManager.swift; sourceTree = "<group>"; };
+		195C72B61D8FD1DB00C24BF4 /* Configurable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configurable.swift; sourceTree = "<group>"; };
+		195C72B81D8FD4B800C24BF4 /* ViewContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewContainer.swift; sourceTree = "<group>"; };
+		195C72BB1D8FD77900C24BF4 /* UILabel+Configurable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+Configurable.swift"; sourceTree = "<group>"; };
+		195C72BD1D8FD96800C24BF4 /* UIButton+Configurable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Configurable.swift"; sourceTree = "<group>"; };
+		19C817321D900F8A0096B455 /* ViewContainerAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewContainerAction.swift; sourceTree = "<group>"; };
+		19C817341D9016410096B455 /* ViewAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewAction.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +42,7 @@
 		195C729E1D8FD12800C24BF4 = {
 			isa = PBXGroup;
 			children = (
+				195C72B31D8FD14300C24BF4 /* Configs */,
 				195C72AA1D8FD12800C24BF4 /* UIDataManagerKit */,
 				195C72A91D8FD12800C24BF4 /* Products */,
 			);
@@ -46,10 +59,31 @@
 		195C72AA1D8FD12800C24BF4 /* UIDataManagerKit */ = {
 			isa = PBXGroup;
 			children = (
-				195C72AB1D8FD12800C24BF4 /* UIDataManagerKit.h */,
-				195C72AC1D8FD12800C24BF4 /* Info.plist */,
+				195C72BA1D8FD76600C24BF4 /* UIViews */,
+				195C72B41D8FD16F00C24BF4 /* StackViewDataManager.swift */,
+				195C72B61D8FD1DB00C24BF4 /* Configurable.swift */,
+				195C72B81D8FD4B800C24BF4 /* ViewContainer.swift */,
+				19C817321D900F8A0096B455 /* ViewContainerAction.swift */,
+				19C817341D9016410096B455 /* ViewAction.swift */,
 			);
 			path = UIDataManagerKit;
+			sourceTree = "<group>";
+		};
+		195C72B31D8FD14300C24BF4 /* Configs */ = {
+			isa = PBXGroup;
+			children = (
+				195C72AC1D8FD12800C24BF4 /* Info.plist */,
+			);
+			name = Configs;
+			sourceTree = "<group>";
+		};
+		195C72BA1D8FD76600C24BF4 /* UIViews */ = {
+			isa = PBXGroup;
+			children = (
+				195C72BB1D8FD77900C24BF4 /* UILabel+Configurable.swift */,
+				195C72BD1D8FD96800C24BF4 /* UIButton+Configurable.swift */,
+			);
+			name = UIViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,7 +93,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				195C72AD1D8FD12800C24BF4 /* UIDataManagerKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +128,7 @@
 				TargetAttributes = {
 					195C72A71D8FD12800C24BF4 = {
 						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -131,6 +165,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				195C72B91D8FD4B800C24BF4 /* ViewContainer.swift in Sources */,
+				195C72B71D8FD1DB00C24BF4 /* Configurable.swift in Sources */,
+				195C72B51D8FD16F00C24BF4 /* StackViewDataManager.swift in Sources */,
+				195C72BE1D8FD96800C24BF4 /* UIButton+Configurable.swift in Sources */,
+				19C817351D9016410096B455 /* ViewAction.swift in Sources */,
+				19C817331D900F8A0096B455 /* ViewContainerAction.swift in Sources */,
+				195C72BC1D8FD77900C24BF4 /* UILabel+Configurable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +280,7 @@
 		195C72B11D8FD12800C24BF4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -250,6 +292,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Noxt.UIDataManagerKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -257,6 +300,7 @@
 		195C72B21D8FD12800C24BF4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -291,6 +335,7 @@
 				195C72B21D8FD12800C24BF4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
