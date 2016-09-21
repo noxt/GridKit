@@ -10,7 +10,7 @@ import UIKit
 
 
 public protocol ContainerConfigurable {
-  func configure(_ item: UIView)
+  func configure()
 }
 
 
@@ -26,7 +26,7 @@ public protocol Container: ContainerConfigurable, ContainerActionable {
 
 public class ViewContainer<ViewType: UIView>: Container where ViewType: Configurable {
   
-  public let view: UIView = ViewType()
+  public var view: UIView = ViewType()
   internal let item: ViewType.ItemType
   fileprivate lazy var actions = [String: ViewContainerAction<ViewType>]()
   
@@ -37,8 +37,8 @@ public class ViewContainer<ViewType: UIView>: Container where ViewType: Configur
   
   // MARK: - ContainerConfigurable
   
-  public func configure(_ item: UIView) {
-    (item as? ViewType)?.configure(with: self.item)
+  public func configure() {
+    view.configure(with: self.item)
   }
   
   

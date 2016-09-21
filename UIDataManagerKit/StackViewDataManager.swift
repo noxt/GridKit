@@ -38,7 +38,7 @@ public class StackViewDataManager {
   
   public func append(container: Container) {
     containers.append(container)
-    container.configure(container.view)
+    container.configure()
     stackView.addArrangedSubview(container.view)
   }
   
