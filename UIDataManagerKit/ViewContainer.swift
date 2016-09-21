@@ -38,7 +38,7 @@ public class ViewContainer<ViewType: UIView>: Container where ViewType: Configur
   // MARK: - ContainerConfigurable
   
   public func configure() {
-    view.configure(with: self.item)
+    (view as! ViewType).configure(with: self.item)
   }
   
   
