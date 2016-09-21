@@ -20,7 +20,7 @@ public protocol ContainerActionable {
 
 
 public protocol Container: ContainerConfigurable, ContainerActionable {
-  var view: UIView { get }
+  var view: UIView { get set }
 }
 
 
