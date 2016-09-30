@@ -1,6 +1,6 @@
 //
 //  StackViewDataManager.swift
-//  UIDataManagerKit
+//  GridKit
 //
 //  Created by Dmitry Ivanenko on 19.09.16.
 //  Copyright © 2016 Dmitry Ivanenko. All rights reserved.
@@ -17,7 +17,7 @@ public class StackViewDataManager {
   public init(stackView: UIStackView) {
     self.stackView = stackView
     
-    NotificationCenter.default.addObserver(self, selector: #selector(didReceiveAction), name: NSNotification.Name(rawValue: UIDataManagerKitNotifications.ViewAction), object: nil)
+    NotificationCenter.default.addObserver(self, selector: #selector(didReceiveAction), name: NSNotification.Name(rawValue: GridKitNotifications.ViewAction), object: nil)
   }
   
   deinit {

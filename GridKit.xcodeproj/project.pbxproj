@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		195C72AC1D8FD12800C24BF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = UIDataManagerKit/Info.plist; sourceTree = "<group>"; };
+		195C72AC1D8FD12800C24BF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = GridKit/Info.plist; sourceTree = "<group>"; };
 		195C72B41D8FD16F00C24BF4 /* StackViewDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StackViewDataManager.swift; sourceTree = "<group>"; };
 		195C72B61D8FD1DB00C24BF4 /* Configurable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configurable.swift; sourceTree = "<group>"; };
 		195C72B81D8FD4B800C24BF4 /* ViewContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewContainer.swift; sourceTree = "<group>"; };
@@ -15,7 +15,7 @@
 		195C72BD1D8FD96800C24BF4 /* UIButton+Configurable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Configurable.swift"; sourceTree = "<group>"; };
 		19C817321D900F8A0096B455 /* ViewContainerAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewContainerAction.swift; sourceTree = "<group>"; };
 		19C817341D9016410096B455 /* ViewAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewAction.swift; sourceTree = "<group>"; };
-		19C817431D9028730096B455 /* UIDataManagerKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIDataManagerKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		19C817431D9028730096B455 /* GridKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GridKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,7 +33,7 @@
 			isa = PBXGroup;
 			children = (
 				195C72B31D8FD14300C24BF4 /* Configs */,
-				195C72AA1D8FD12800C24BF4 /* UIDataManagerKit */,
+				195C72AA1D8FD12800C24BF4 /* GridKit */,
 				195C72A91D8FD12800C24BF4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,12 +41,12 @@
 		195C72A91D8FD12800C24BF4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				19C817431D9028730096B455 /* UIDataManagerKit.framework */,
+				19C817431D9028730096B455 /* GridKit.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		195C72AA1D8FD12800C24BF4 /* UIDataManagerKit */ = {
+		195C72AA1D8FD12800C24BF4 /* GridKit */ = {
 			isa = PBXGroup;
 			children = (
 				195C72BA1D8FD76600C24BF4 /* UIViews */,
@@ -56,7 +56,7 @@
 				19C817321D900F8A0096B455 /* ViewContainerAction.swift */,
 				19C817341D9016410096B455 /* ViewAction.swift */,
 			);
-			path = UIDataManagerKit;
+			path = GridKit;
 			sourceTree = "<group>";
 		};
 		195C72B31D8FD14300C24BF4 /* Configs */ = {
@@ -89,9 +89,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		19C817421D9028730096B455 /* UIDataManagerKit */ = {
+		19C817421D9028730096B455 /* GridKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 19C817481D9028730096B455 /* Build configuration list for PBXNativeTarget "UIDataManagerKit" */;
+			buildConfigurationList = 19C817481D9028730096B455 /* Build configuration list for PBXNativeTarget "GridKit" */;
 			buildPhases = (
 				19C8173E1D9028730096B455 /* Sources */,
 				19C8173F1D9028730096B455 /* Frameworks */,
@@ -102,9 +102,9 @@
 			);
 			dependencies = (
 			);
-			name = UIDataManagerKit;
-			productName = UIDataManagerKit;
-			productReference = 19C817431D9028730096B455 /* UIDataManagerKit.framework */;
+			name = GridKit;
+			productName = GridKit;
+			productReference = 19C817431D9028730096B455 /* GridKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -122,7 +122,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 195C72A21D8FD12800C24BF4 /* Build configuration list for PBXProject "UIDataManagerKit" */;
+			buildConfigurationList = 195C72A21D8FD12800C24BF4 /* Build configuration list for PBXProject "GridKit" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -134,7 +134,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				19C817421D9028730096B455 /* UIDataManagerKit */,
+				19C817421D9028730096B455 /* GridKit */,
 			);
 		};
 /* End PBXProject section */
@@ -264,14 +264,15 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = UIDataManagerKit/Info.plist;
+				INFOPLIST_FILE = GridKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Noxt.UIDataManagerKit;
+				PRODUCT_BUNDLE_IDENTIFIER = Noxt.GridKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -283,14 +284,15 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = UIDataManagerKit/Info.plist;
+				INFOPLIST_FILE = GridKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Noxt.UIDataManagerKit;
+				PRODUCT_BUNDLE_IDENTIFIER = Noxt.GridKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -300,7 +302,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		195C72A21D8FD12800C24BF4 /* Build configuration list for PBXProject "UIDataManagerKit" */ = {
+		195C72A21D8FD12800C24BF4 /* Build configuration list for PBXProject "GridKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				195C72AE1D8FD12800C24BF4 /* Debug */,
@@ -309,13 +311,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		19C817481D9028730096B455 /* Build configuration list for PBXNativeTarget "UIDataManagerKit" */ = {
+		19C817481D9028730096B455 /* Build configuration list for PBXNativeTarget "GridKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				19C817491D9028730096B455 /* Debug */,
 				19C8174A1D9028730096B455 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

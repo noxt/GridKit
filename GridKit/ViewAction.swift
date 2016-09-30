@@ -1,6 +1,6 @@
 //
 //  ViewAction.swift
-//  UIDataManagerKit
+//  GridKit
 //
 //  Created by Dmitry Ivanenko on 19.09.16.
 //  Copyright © 2016 Dmitry Ivanenko. All rights reserved.
@@ -9,8 +9,8 @@
 import UIKit
 
 
-struct UIDataManagerKitNotifications {
-  static let ViewAction = "UIDataManagerKitViewAction"
+struct GridKitNotifications {
+  static let ViewAction = "GridKitViewAction"
 }
 
 
@@ -27,7 +27,7 @@ public class ViewAction {
   }
   
   public func invoke() {
-    NotificationCenter.default.post(name: Notification.Name(rawValue: UIDataManagerKitNotifications.ViewAction), object: self, userInfo: userInfo)
+    NotificationCenter.default.post(name: Notification.Name(rawValue: GridKitNotifications.ViewAction), object: self, userInfo: userInfo)
   }
   
 }

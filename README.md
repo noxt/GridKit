@@ -1,2 +1,2 @@
-# UIDataManager
-Declarative UI data management
+# GridKit
+Declarative stack view data management

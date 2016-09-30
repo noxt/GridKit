@@ -1,6 +1,6 @@
 //
 //  UILabel+Configurable.swift
-//  UIDataManagerKit
+//  GridKit
 //
 //  Created by Dmitry Ivanenko on 19.09.16.
 //  Copyright © 2016 Dmitry Ivanenko. All rights reserved.
