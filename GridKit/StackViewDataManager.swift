@@ -51,7 +51,7 @@ public class StackViewDataManager {
   public func clear() {
     containers.removeAll()
     for subview in stackView.arrangedSubviews {
-      stackView.removeArrangedSubview(subview)
+      subview.removeFromSuperview()
     }
   }
   
